@@ -3,18 +3,20 @@ package org.dimigo.basic;
 public class Condition {
 
 	public static void main(String[] args) {
-		int distance = 10;
-		String car="고속버스";
-		int money;
+		int distance = 15;
+		String car="경 차";
+		int money = 0;
 		
 		switch(car){
 		case "고속버스":
-			money = 850+((distance-1)/10*300);
+			money = 850+((distance-1)/10)*300;
 			break;
-		case "경차":
-			money = 300+((distance-1)/10*200);
-		default:
-			money = 600+((distance-1)/10*200);
+		case "경 차":
+			money = 300+((distance-1)/10)*200;
+			break;
+		case "그 외":
+			money = 600+((distance-1)/10)*200;
+			break;
 		}
 		
 	

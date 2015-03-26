@@ -30,7 +30,6 @@ public class Operator {
 		System.out.println("사다리꼴 넓이:"+sum1);
 		System.out.println("평행사변형의 넓이:"+sum2);
 		System.out.println("사다리꼴이 평행사변형보다"+sum3+"더 큽니다.");
-
 	}
 
 }

@@ -93,15 +93,23 @@ public class NaverSearch {
 		        
 		        for(int i=0; i<movieList.size(); i++)
 		        {
-		        	bw.write((i+1) + ". " + movieList.get(i).getTitle() + " - [");
-		        	List<String> actors = movieList.get(i).getActors();
-		        	for(int j=0; j<actors.size(); j++) {
-		        		if(j != 0)
-		        			bw.write(", ");
-		        		bw.write(actors.get(j));
-		        	}
-		        	bw.write("]\n");
+		        	
+		        		bw.write((i+1) + ". " + movieList.get(i).getTitle() + " - [");
+		        		
+		        		List<String> actors = movieList.get(i).getActors();
+		        		
+		        		for(int j=0; j<actors.size(); j++) {
+		        						if(j != 0)
+		        								bw.write(", ");
+		        								bw.write(actors.get(j));
+		        				}
+		        		
+		        		
+		        			bw.write("]\n");
+		        			
 		        }
+		        
+		        
 	        }
 	
 	    } catch (IOException e) {
